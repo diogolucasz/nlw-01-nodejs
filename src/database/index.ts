@@ -1,4 +1,5 @@
 import { DataSource } from "typeorm"
+import { Point } from "../Entities/Point"
 
 export const AppDataSource = new DataSource({
     type: "postgres",
@@ -8,8 +9,7 @@ export const AppDataSource = new DataSource({
     password: "postgres",
     database: "nlw_01_nodejs",
     migrations: ["src/database/migrations/*.ts"],
-
-    //entities: [Post, Category],
+    entities: [Point],
 
 })
 

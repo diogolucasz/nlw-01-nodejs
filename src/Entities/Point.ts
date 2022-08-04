@@ -1,6 +1,8 @@
-import { Column } from "typeorm";
+import { Column, Entity } from "typeorm";
 import { BaseEntity } from "./BaseEntity";
 
+
+@Entity("points")
 export class Point extends BaseEntity {
     
     @Column()

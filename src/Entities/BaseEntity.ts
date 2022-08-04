@@ -1,3 +1,4 @@
+import crypto from 'crypto';
 import { CreateDateColumn, PrimaryColumn } from "typeorm";
 
 export class BaseEntity {
