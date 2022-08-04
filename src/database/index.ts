@@ -6,7 +6,7 @@ export const AppDataSource = new DataSource({
     port: 5432,
     username: "postgres",
     password: "postgres",
-    database: "nlw_04_nodejs",
+    database: "nlw_01_nodejs",
     migrations: ["src/database/migrations/*.ts"],
 
     //entities: [Post, Category],
